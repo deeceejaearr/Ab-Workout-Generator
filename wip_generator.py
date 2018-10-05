@@ -8,13 +8,12 @@
 import random
 
 
-my_list = []
+full_workout_list = 'ab_workout_list'
 
 with open('ab_workout_list', 'r') as f:
     my_list = [line.rstrip('\n') for line in f]
 
-    filepath = 'ab_workout_list'
-    with open(filepath) as fp:
+    with open(full_workout_list) as fp:
         line = fp.readline()
         cnt = 1
         while line:
